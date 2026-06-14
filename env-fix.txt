@@ -1,0 +1,33 @@
+# =============================
+# RESEND EMAIL CONFIG
+# =============================
+# Buat API key baru dari Resend Dashboard → API Keys.
+# Jangan commit file .env.local ke GitHub.
+RESEND_API_KEY=re_R1gws7NN_6MDsUuerPdvGcPUD9FhmhBrP
+
+# Email tujuan notifikasi admin. Bisa lebih dari satu, pisahkan dengan koma.
+MAIL_TO=fajarrizky04febriano@gmail.com
+
+# Reply-To untuk email konfirmasi ke user.
+# Biasanya isi sama dengan MAIL_TO atau email admin resmi.
+MAIL_REPLY_TO=abs.lawoffice88@gmail.com
+
+# Sender domain harus verified di Resend.
+# Untuk production, disarankan jangan pakai noreply; gunakan konsultasi/halo/admin.
+MAIL_FROM="ABS Law Office <konsultasi@fajarrizky.my.id>"
+
+# Domain production agar email tidak menampilkan localhost.
+SITE_URL=https://fajarrizky.my.id
+
+# Opsional: URL logo absolut untuk template email.
+# Jika kosong, sistem memakai SITE_URL + /assets/images/logo.png.
+EMAIL_LOGO_URL=
+
+# Kirim email konfirmasi otomatis ke pengguna: true / false
+SEND_USER_CONFIRMATION=true
+
+# Opsional: aktifkan origin check di production.
+# Local test: kosongkan saja.
+# Production contoh: https://fajarrizky.my.id
+ALLOWED_ORIGIN=
+
